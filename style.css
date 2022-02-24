@@ -24,6 +24,7 @@ body {
   padding: 10px;
   -wevkit-appearance: none;
   appearance: none;
+  outline: none;
 }
 .first-appsumo label {
   color: #8c8a8a;
