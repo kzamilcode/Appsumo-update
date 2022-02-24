@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/************FIRST-SECTION-CSS**************/
+.select-box {
+  position: relative;
+}
+.select-box select {
+  border: none;
+  background: #ffffff;
+  width: 990px;
+  height: 42px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #979090;
+  font-weight: 500;
+  padding: 10px;
+  -wevkit-appearance: none;
+  appearance: none;
+}
+.first-appsumo label {
+  color: #8c8a8a;
+  font-size: 13px;
+  width: 129px;
+  height: 38px;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.first-appsumo form,
+.two-appsumo form,
+.three-appsumo form {
+  width: 1025px;
+}
+.first-appsumo label img {
+  margin-left: 10px;
+}
+label p {
+  padding-left: 10px;
+}
+#file {
+  display: none;
+}
+.select-box img {
+  position: absolute;
+  right: 10px;
+  z-index: 999;
+  top: 20px;
+  pointer-events: none;
+}
+.first-appsumo .popup,
+.two-appsumo .popup-two,
+.three-appsumo .popup-three {
+  width: 1087px;
+  top: -200%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 100ms ease-in-out, top 1000ms ease-in-out,
+    top 100ms ease-in-out, transform 100ms ease-in-out;
+  opacity: 0;
+}
+.first-appsumo .popup.active,
+.two-appsumo .popup-two.active,
+.three-appsumo .popup-three.active {
+  opacity: 1;
+  top: 0px;
+  transform: scale(1);
+  transition: transform 100ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+/***********POPUP-CSS*************/
+
+.first-appsumo .progress {
+  height: 8px;
+  width: 1089px;
+}
+.first-appsumo .progress-bar {
+  background: #3ab01e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 100%;
+
+  opacity: 0;
+  transition: 5s ease;
+  color: #8846ea;
+  font-weight: 500;
+}
+#dismiss-popup-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  color: #959191;
+  cursor: pointer;
+}
+.first-appsumo,
+.two-appsumo,
+.three-appsumo {
+  width: 1089px;
+}
+.first-appsumo {
+  background: linear-gradient(
+    95.15deg,
+    #533fcb -11.14%,
+    #9148ef 101.94%,
+    #8846ea 101.94%
+  );
+  border-radius: 5px;
+
+  margin-bottom: 30px;
+  padding-bottom: 45px;
+}
+.text-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.text-content p {
+  font-size: 14px;
+  font-weight: 400;
+  width: 423px;
+  line-height: 20px;
+  margin-top: 8px;
+}
+.text-content {
+  color: #fff;
+  padding-top: 12px;
+  padding-left: 49px;
+}
+
+.first-appsumo form {
+  background: #33229e26;
+  padding: 20px 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 5px;
+  padding-bottom: 115px;
+}
+
+.first-appsumo .button,
+.two-appsumo .button,
+.three-appsumo .button {
+  background: #fff;
+  width: 102px;
+  height: 38px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -68px;
+  margin-left: 50px;
+}
+
+.button.active {
+  height: 20px;
+  width: 80%;
+}
+.button.active .uploading {
+  transform: translateY(25px);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.first-appsumo .button .uploading,
+.two-appsumo .button .uploading,
+.three-appsumo .button .uploading {
+  font-size: 14px;
+  color: #8c8a8a;
+  font-weight: 500;
+  margin-top: 10px;
+  display: block;
+  transition: all 0.3s ease;
+  padding: 10px;
+  display: flex;
+}
+.first-appsumo .button .uploading img,
+.two-appsumo .button .uploading img,
+.three-appsumo .button .uploading img {
+  margin-left: 10px;
+  margin-top: 2px;
+  object-fit: contain;
+}
+/*********SECOUND-SECTION-CSS*********/
+
+/***********POPUP-CSS*************/
+
+.two-appsumo .progress-two {
+  height: 8px;
+  width: 1089px;
+}
+.two-appsumo .progress-bar-two {
+  background: #5c3acf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 5s ease;
+  color: #8846ea;
+  font-weight: 500;
+}
+
+.two-appsumo {
+  background: linear-gradient(93.92deg, #8f0f8a -2.54%, #6d166f 101.64%);
+  padding-bottom: 42px;
+  margin-bottom: 30px;
+}
+.two-appsumo form {
+  background: #2504261a;
+  margin-top: 20px;
+  padding: 20px 20px;
+  margin-left: 30px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.two-appsumo .text-content {
+  padding-top: 10px;
+}
+.two-appsumo form div label::after {
+  display: none;
+}
+.two-appsumo form div label::before {
+  display: none;
+}
+input[type="number"] {
+  width: 50px;
+  font-size: 15px;
+  padding: 10px;
+  -moz-appearance: textfield;
+  color: #6d166e;
+  height: 38px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.two-appsumo .button {
+  padding: 0px 8px;
+  margin-left: 109px;
+}
+.btn {
+  color: #a19c9c;
+  text-decoration: none;
+  background: #fff;
+  font-size: 13px;
+  padding-left: 18px;
+  width: 95px;
+  height: 38px;
+  line-height: 38px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+/*********THREE-SECTION-CSS************/
+
+.three-appsumo form {
+  background: #bb452b40;
+}
+.three-appsumo {
+  background: linear-gradient(93.99deg, #cb593f -0.98%, #df7e54 101.6%);
+  padding-bottom: 40px;
+}
+
+.three-appsumo .button {
+  margin-top: -61px;
+}
+.three-appsumo .button .uploading {
+  display: block !important;
+}
+.three-appsumo form {
+  background: #bb452b40;
+  padding-bottom: 60px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  padding-bottom: 60px;
+  margin-left: 30px;
+}
+.three-appsumo .progress-bar-three {
+  background: #5742e8;
+  background: rgb(113, 21, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 21, 114, 1) 30%,
+    rgba(92, 58, 207, 1) 50%,
+    rgba(204, 89, 63, 1) 95%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 5s ease;
+  color: #8846ea;
+  font-weight: 500;
+}
+.three-appsumo .progress-three {
+  height: 8px;
+  width: 1089px;
+  top: 8%;
+  left: 50%;
+}
