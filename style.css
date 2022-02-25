@@ -291,6 +291,7 @@ input[type="number"] {
   padding: 20px 20px;
   padding-bottom: 60px;
   margin-left: 30px;
+  border-radius: 5px;
 }
 .three-appsumo .progress-bar-three {
   background: #5742e8;

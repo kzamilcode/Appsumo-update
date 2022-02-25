@@ -2,10 +2,10 @@
 
 /***********INPTU-TEXT-CHANGE******************* */
 
-let file = document.getElementById('upload');
+let file = document.getElementById('file');
 file.oninput = () =>{
     let filename = file.files[0].name;
-    document.querySelector('label').innerText = filename;
+    document.querySelector('option').innerText = filename;
   
 }
 
